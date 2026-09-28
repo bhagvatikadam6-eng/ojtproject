@@ -3,143 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Responsive Homepage</title>
-    <!-- Bootstrap 5 CSS CDN -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <!-- Link to External CSS -->
+    <title>Simple Business Page</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-uppercase" href="#">
-                <span class="text-primary">Biz</span>Flex
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-medium">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-lg-2 mt-2 mt-lg-0" href="#contact">Get Started</a></li>
-                </ul>
-            </div>
+    <!-- Simple Top Menu Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">Simple<span>Start</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-cta">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold mb-3">Scale Your Business to the Next Level</h1>
-                    <p class="lead mb-4 text-white-50">Build beautiful, lightning-fast layouts with modern web infrastructure. Empowering development teams globally.</p>
-                    <div class="d-grid gap-3 d-md-flex justify-content-md-start justify-content-center">
-                        <a href="#features" class="btn btn-primary btn-lg px-4 fw-semibold">Explore Features</a>
-                        <a href="#about" class="btn btn-outline-light btn-lg px-4 fw-semibold">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <svg class="img-fluid rounded-3 shadow-lg graphic-placeholder" width="500" height="350" xmlns="http://w3.org" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="32%" y="50%" fill="#eceeef" dy=".3em" font-size="24px" font-family="sans-serif">Interactive Graphics</text>
-                    </svg>
-                </div>
-            </div>
+    <!-- Simple Hero Introduction Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <h1>We build lightweight digital web solutions.</h1>
+            <p>A minimalist design pattern built with clean HTML5 and basic CSS grid systems for fast performance.</p>
+            <a href="#services" class="btn-main">Get Started</a>
         </div>
     </header>
 
-    <!-- Features Section -->
-    <section id="features" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5 max-width-md">
-                <h2 class="fw-bold">Why Industry Leaders Choose Us</h2>
-                <p class="text-muted">Designed for peak operational performance and fluid scalability.</p>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Feature 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm feature-card">
-                        <div class="card-body">
-                            <div class="text-primary mb-3">
-                                <svg xmlns="http://w3.org" width="32" height="32" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-                                  <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
-                                </svg>
-                            </div>
-                            <h5 class="card-title fw-bold">Ultra Fast Performance</h5>
-                            <p class="card-text text-muted">Optimized source rendering keeps bounce rates exceptionally low across all networks.</p>
-                        </div>
-                    </div>
+    <!-- Simple 3-Column Services Layout -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="grid-3">
+                <div class="service-box">
+                    <h3>Web Design</h3>
+                    <p>Clean, functional structural layouts that display perfectly across phone screens and desktop sizes.</p>
                 </div>
-                <!-- Feature 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm feature-card">
-                        <div class="card-body">
-                            <div class="text-primary mb-3">
-                                <svg xmlns="http://w3.org" width="32" height="32" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915V9.5a.5.5 0 0 1-1 0V7.915A1.5 1.5 0 0 1 8 5"/>
-                                </svg>
-                            </div>
-                            <h5 class="card-title fw-bold">Enterprise Security</h5>
-                            <p class="card-text text-muted">End-to-end data safety matrices engineered to satisfy standard compliance levels.</p>
-                        </div>
-                    </div>
+                <div class="service-box">
+                    <h3>Development</h3>
+                    <p>Lightweight programming architecture without unnecessary system files or runtime bloat.</p>
                 </div>
-                <!-- Feature 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100 p-4 border-0 shadow-sm feature-card">
-                        <div class="card-body">
-                            <div class="text-primary mb-3">
-                                <svg xmlns="http://w3.org" width="32" height="32" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
-                                  <path d="M12.433 10.07C14.133 10.585 16 11.15 16 12c0 2.2-3.582 4-8 4S0 14.2 0 12c0-.85 1.867-1.415 3.567-1.93C4.47 9.774 5.5 9.458 5.5 9c0-.623-.633-.914-1.09-1.267-.474-.365-1.03-.8-1.03-1.733 0-1.288 1.258-2.5 3.72-2.5 1.393 0 2.5.36 3.16.99.66-.63 1.767-.99 3.16-.99 2.462 0 3.72 1.212 3.72 2.5 0 .934-.557 1.369-1.03 1.734-.457.353-1.09.644-1.09 1.267 0 .458 1.03.774 1.933 1.07M3.5 7a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m4.5-.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0m0 2.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0m4.5-.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
-                                </svg>
-                            </div>
-                            <h5 class="card-title fw-bold">Modular Customization</h5>
-                            <p class="card-text text-muted">Intuitively extend utility elements with structured Bootstrap components library.</p>
-                        </div>
-                    </div>
+                <div class="service-box">
+                    <h3>SEO Setup</h3>
+                    <p>Semantic indexing tags structured correctly out-of-the-box for visibility optimization.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <div class="col-md-6 order-md-2">
-                    <h2 class="fw-bold mb-3">Engineered for Creative Minds</h2>
-                    <p class="text-muted">We eliminate heavy scaffolding architectures, giving you a clean slate to structure responsive grids easily. Spend less time troubleshooting alignment and more time launching ideas.</p>
-                    <ul class="list-unstyled mt-3">
-                        <li class="mb-2 text-secondary"><strong class="text-dark">✓</strong> 100% Fully Fluid Viewport Adjustments</li>
-                        <li class="mb-2 text-secondary"><strong class="text-dark">✓</strong> Out-of-the-box Dark/Light Mode Utilities</li>
-                        <li class="mb-2 text-secondary"><strong class="text-dark">✓</strong> Developer Friendly Class Architecture</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <svg class="img-fluid rounded-3 shadow graphic-placeholder" width="550" height="400" xmlns="http://w3.org" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#6c757d"></rect>
-                        <text x="35%" y="50%" fill="#eceeef" dy=".3em" font-size="24px" font-family="sans-serif">Process Diagram</text>
-                    </svg>
-                </div>
-            </div>
+    <!-- Simple Clean Text Row Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <h2>Our Core Principle</h2>
+            <p>We eliminate unnecessary complexity. Good software architecture doesn't require thousands of code packages. This entire platform runs natively inside any modern browser completely instantly.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="text-white py-4 mt-auto">
-        <div class="container text-center">
-            <p class="mb-2">&copy; 2026 BizFlex Inc. All Rights Reserved.</p>
-            <small class="text-white-50">Built proudly utilizing <a href="https://getbootstrap.com" class="text-primary text-decoration-none" target="_blank" rel="noopener">Bootstrap 5</a></small>
+    <!-- Simple Basic Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2026 SimpleStart. Clean layout logic.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JavaScript Bundle CDN -->
-    <script src="https://jsdelivr.net"></script>
 </body>
 </html>
