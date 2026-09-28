@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Custom Stylesheet for Homepage Layout
+   ========================================================================== */
+
+/* 1. Global Extensions */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.max-width-md {
+    max-width: 600px;
+}
+
+/* 2. Hero Component */
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    min-height: 75vh;
+    padding: 80px 0;
+}
+
+.graphic-placeholder {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3. Feature Section Interaction Matrix */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 4. Structural Footer System */
+footer {
+    background-color: #111111;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
